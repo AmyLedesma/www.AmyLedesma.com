@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Polymer3OnGitHub - Davsk.Net - Appropriate Use of Advanced Technology</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="David Skinner" />
+  <meta name="description" content="Welcome to the How To Build a Website Wiki! We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub. I am using Windows 10 Professional so if you are using Mac or Linux, you may have to adapt a bit.
+What is GitHub Pages? GitHub can serve static pages from personal, organizational, or project repos. Mark down files can be processed automatically by GitHub using Jeckal to apply a template and create a static web site." />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.3" />
+
+
+<link rel="canonical" href="http://localhost:1313/tutorial/polymer3ongithub/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Polymer3OnGitHub" />
+<meta property="og:description" content="Welcome to the How To Build a Website Wiki! We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub. I am using Windows 10 Professional so if you are using Mac or Linux, you may have to adapt a bit.
+What is GitHub Pages? GitHub can serve static pages from personal, organizational, or project repos. Mark down files can be processed automatically by GitHub using Jeckal to apply a template and create a static web site." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/tutorial/polymer3ongithub/" />
+
+
+
+<meta property="article:published_time" content="2018-05-12T16:21:23-05:00"/>
+
+<meta property="article:modified_time" content="2018-05-12T16:21:23-05:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Polymer3OnGitHub">
+<meta itemprop="description" content="Welcome to the How To Build a Website Wiki! We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub. I am using Windows 10 Professional so if you are using Mac or Linux, you may have to adapt a bit.
+What is GitHub Pages? GitHub can serve static pages from personal, organizational, or project repos. Mark down files can be processed automatically by GitHub using Jeckal to apply a template and create a static web site.">
+
+
+<meta itemprop="datePublished" content="2018-05-12T16:21:23-05:00" />
+<meta itemprop="dateModified" content="2018-05-12T16:21:23-05:00" />
+<meta itemprop="wordCount" content="358">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Polymer3OnGitHub"/>
+<meta name="twitter:description" content="Welcome to the How To Build a Website Wiki! We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub. I am using Windows 10 Professional so if you are using Mac or Linux, you may have to adapt a bit.
+What is GitHub Pages? GitHub can serve static pages from personal, organizational, or project repos. Mark down files can be processed automatically by GitHub using Jeckal to apply a template and create a static web site."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">www.Davsk.com</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/blog/">
+        <li class="mobile-menu-item">Blog</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/tutorial/">
+        <li class="mobile-menu-item">Tutorial</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">www.Davsk.com</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/">Blog</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tutorial/">Tutorial</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Polymer3OnGitHub</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> Sat, May 12 2018 16:21:23 CDT </span>
+        
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#welcome-to-the-how-to-build-a-website-wiki">Welcome to the How To Build a Website Wiki!</a>
+<ul>
+<li>
+<ul>
+<li><a href="#we-are-going-to-build-a-static-web-site-using-go-html5-css3-polymer-3-0-typescript-and-webpack-on-github">We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub.</a></li>
+</ul></li>
+<li><a href="#install-tools">Install Tools</a>
+<ul>
+<li><a href="#install-go">Install GO</a></li>
+<li><a href="#polymer-dependencies">Polymer dependencies.</a></li>
+<li><a href="#remove-old-polymer-install-new-polymer">Remove old Polymer, install new Polymer.</a></li>
+</ul></li>
+<li><a href="#create-repository">Create Repository</a>
+<ul>
+<li><a href="#create-a-github-repository">Create a GitHub repository</a></li>
+<li><a href="#configuring-publishing-source">Configuring publishing source</a></li>
+<li><a href="#configure-cloudflare-to-enforce-https">Configure Cloudflare to enforce https</a></li>
+<li><a href="#clone-repository">Clone repository</a></li>
+<li><a href="#init-polymer">Init Polymer</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h1 id="welcome-to-the-how-to-build-a-website-wiki">Welcome to the How To Build a Website Wiki!</h1>
+
+<h3 id="we-are-going-to-build-a-static-web-site-using-go-html5-css3-polymer-3-0-typescript-and-webpack-on-github">We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub.</h3>
+
+<p>I am using Windows 10 Professional so if you are using Mac or Linux, you may have to adapt a bit.</p>
+
+<p><a href="https://help.github.com/articles/what-is-github-pages/">What is GitHub Pages?</a>
+GitHub can serve static pages from personal, organizational, or project repos. Mark down files can be processed automatically by GitHub using Jeckal to apply a template and create a static web site. Hugo is a GO program that can create static files from mark down but we will not be using it today.</p>
+
+<p>What we will be doing is to use the advanced templating capabilities in GO to create the source html files that Polymer will encapsulate in a static app.</p>
+
+<h2 id="install-tools">Install Tools</h2>
+
+<h3 id="install-go">Install GO</h3>
+
+<p><a href="https://golang.org/doc/install">Getting Started with The Go Programming Language</a></p>
+
+<h3 id="polymer-dependencies">Polymer dependencies.</h3>
+
+<p><a href="https://nodejs.org/en/download/">Node.JS</a></p>
+
+<pre><code>node --version
+</code></pre>
+
+<p>Update npn</p>
+
+<pre><code>npm install npm@latest -g
+</code></pre>
+
+<p>Ensure that Git is installed.</p>
+
+<pre><code>git --version
+</code></pre>
+
+<p>If it isn&rsquo;t, you can find it on the <a href="https://git-scm.com/downloads">Git downloads page</a>.</p>
+
+<p>Install the latest version of Bower.</p>
+
+<pre><code>npm install -g bower
+</code></pre>
+
+<h3 id="remove-old-polymer-install-new-polymer">Remove old Polymer, install new Polymer.</h3>
+
+<p><a href="https://www.polymer-project.org/blog/2018-04-12-polymer-3-tools-update.html">Polymer 3.0 Tools Update</a></p>
+
+<pre><code>npm uninstall -g polymer-cli
+npm install -g polymer-cli@next
+</code></pre>
+
+<h2 id="create-repository">Create Repository</h2>
+
+<h3 id="create-a-github-repository">Create a GitHub repository</h3>
+
+<h3 id="configuring-publishing-source">Configuring publishing source</h3>
+
+<ul>
+<li>Create a /docs/index.html file in the repository containing the one line <code>Hello World!</code>.</li>
+<li>Create a /docs/CNAME file containing your custom domain.</li>
+</ul>
+
+<p><a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">Configuring a publishing source for GitHub Pages</a>
+You can now go to your project settings tab and go to GitHub pages and select /docs, enter your custom domain, do not enforce https.</p>
+
+<h3 id="configure-cloudflare-to-enforce-https">Configure Cloudflare to enforce https</h3>
+
+<p><a href="https://www.cloudflare.com">www.cloudflare.com</a>
+Once every thing is set up properly and propagated, you can go back to GitHub settings and enforce https.</p>
+
+<p>You should now be able to browse your custom domain securely and see <strong>Hello World!</strong></p>
+
+<h3 id="clone-repository">Clone repository</h3>
+
+<p>You will now need to clone the repository as a GO project in your <strong>%gopath%/src</strong> path. I cloned mine in <strong>go/src/davsk.net</strong> resulting in a <strong>go/src/davsk.net/website/</strong> directory.</p>
+
+<h3 id="init-polymer">Init Polymer</h3>
+
+<p>In your project directory, you will now init Polymer.</p>
+
+<pre><code>polymer init
+</code></pre>
+
+<p>Select the starting template. For this project, I am using Starter-Kit.</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">David Skinner</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">Sat, May 12 2018 16:21:23 CDT</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Davsk.Net - Appropriate Use of Advanced Technology</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.davsk.net" property="cc:attributionName" rel="cc:attributionURL">David L. Skinner</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:skinner.david@gmail.comsubject=Davsk.Net%20Website&amp;body=Dear%20Site%20Developer" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/3886366/david-skinner" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/SkinnerDavidL" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/david.lynn.skinner" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.com/in/david-skinner-79373646/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://plus.google.com/u/0/&#43;DavidSkinnerDavsk" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/comaldave" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.reddit.com/user/comaldave" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2005 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Davsk.Net</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
