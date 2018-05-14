@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on www.Davsk.com - Appropriate Use of Advanced Technology</title>
+    <link>http://localhost:1313/tags/english/</link>
+    <description>Recent content in English on www.Davsk.com - Appropriate Use of Advanced Technology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Davsk&amp;#8480</copyright>
+    <lastBuildDate>Sat, 12 May 2018 16:21:23 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Polymer3OnGitHub</title>
+      <link>http://localhost:1313/help/polymer3ongithub/</link>
+      <pubDate>Sat, 12 May 2018 16:21:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/help/polymer3ongithub/</guid>
+      <description>Welcome to the How To Build a Website Wiki! We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub. I am using Windows 10 Professional so if you are using Mac or Linux, you may have to adapt a bit.
+What is GitHub Pages? GitHub can serve static pages from personal, organizational, or project repos. Mark down files can be processed automatically by GitHub using Jeckal to apply a template and create a static web site.</description>
+    </item>
+    
+    <item>
+      <title>[English] Creating a New Theme</title>
+      <link>http://localhost:1313/blog/english-preview/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/english-preview/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>[English] Creating a New Theme</title>
+      <link>http://localhost:1313/post/english-preview/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/english-preview/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+  </channel>
+</rss>

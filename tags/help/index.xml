@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Help on www.Davsk.com - Appropriate Use of Advanced Technology</title>
+    <link>http://localhost:1313/tags/help/</link>
+    <description>Recent content in Help on www.Davsk.com - Appropriate Use of Advanced Technology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Davsk&amp;#8480</copyright>
+    <lastBuildDate>Sat, 12 May 2018 16:21:23 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/help/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Polymer3OnGitHub</title>
+      <link>http://localhost:1313/help/polymer3ongithub/</link>
+      <pubDate>Sat, 12 May 2018 16:21:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/help/polymer3ongithub/</guid>
+      <description>Welcome to the How To Build a Website Wiki! We are going to build a static web site using GO, HTML5, CSS3, Polymer 3.0, TypeScript, and Webpack on GitHub. I am using Windows 10 Professional so if you are using Mac or Linux, you may have to adapt a bit.
+What is GitHub Pages? GitHub can serve static pages from personal, organizational, or project repos. Mark down files can be processed automatically by GitHub using Jeckal to apply a template and create a static web site.</description>
+    </item>
+    
+  </channel>
+</rss>
