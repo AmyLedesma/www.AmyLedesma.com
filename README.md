@@ -1,2 +1,2 @@
-# www.davsk.com
-www.davsk.com is public repo of Hugo Generated site.
+# www.AmyLedesma.com
+www.AmyLedesma.com is public repo of Hugo Generated site.
